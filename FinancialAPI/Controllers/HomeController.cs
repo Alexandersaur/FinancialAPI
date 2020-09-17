@@ -7,9 +7,16 @@ using System.Web.Mvc;
 
 namespace FinancialAPI.Controllers
 {
+    /// <summary>
+    /// Home information
+    /// </summary>
     public class HomeController : Controller
     {
         private ApiDbContext db = new ApiDbContext();
+        /// <summary>
+        /// Home page
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
