@@ -66,6 +66,7 @@ namespace FinancialAPI.Controllers
         /// <param name="IsDeleted">Soft delete boolean</param>
         /// <returns>Household model</returns>
         [Route("UpdateHouseholdDataById")]
+        [HttpPut]
         public async Task<int> UpdateHouseholdDataById
             (
             string HouseholdName,

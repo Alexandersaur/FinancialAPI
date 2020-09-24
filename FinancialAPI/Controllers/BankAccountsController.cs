@@ -70,6 +70,7 @@ namespace FinancialAPI.Controllers
         /// <param name="AccountType">The type of the Bank Account</param>
         /// <returns>Bank Account model</returns>
         [Route("UpdateBankAccountDataById")]
+        [HttpPut]
         public async Task<int> UpdateBankAccountDataById
             (
             int HouseholdId,

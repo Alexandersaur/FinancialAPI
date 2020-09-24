@@ -66,6 +66,7 @@ namespace FinancialAPI.Controllers
         /// <param name="CurrentAmount">The current amount of the Budget Item in USD</param>
         /// <returns>Budget model</returns>
         [Route("UpdateBudgetDataById")]
+        [HttpPut]
         public async Task<int> UpdateBudgetDataById
             (
             int HouseholdId,
